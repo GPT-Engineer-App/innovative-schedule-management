@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Tools } from "lucide-react";
+import { Home, Tool } from "lucide-react"; // Changed "Tools" to "Tool"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/navbar"; // Changed to use the navbar layout
 import About from "./pages/About.jsx";
@@ -42,7 +42,7 @@ export const navItems = [
   {
     title: "Ferramentas",
     to: "/tools",
-    icon: <Tools className="h-4 w-4" />,
+    icon: <Tool className="h-4 w-4" />, // Changed "Tools" to "Tool"
   },
 ];
 
