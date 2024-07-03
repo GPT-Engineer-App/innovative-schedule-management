@@ -19,17 +19,16 @@ const ThreeDVisualization = () => {
     renderer.setSize(mount.clientWidth, mount.clientHeight);
     mount.appendChild(renderer.domElement);
 
-    // Cube
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    // Building (replacing the cube)
+    const geometry = new THREE.BoxGeometry(1, 3, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    const building = new THREE.Mesh(geometry, material);
+    scene.add(building);
 
     // Animation
     const animate = () => {
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+      building.rotation.y += 0.01; // Rotate the building
       renderer.render(scene, camera);
     };
     animate();
