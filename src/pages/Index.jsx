@@ -1,7 +1,7 @@
-import ThreeDVisualization from '../components/ThreeDVisualization';
-import BudgetProgressChart from '../components/BudgetProgressChart';
-import SCurveChart from '../components/SCurveChart';
-import GanttChart from '../components/GanttChart';
+import ThreeDVisualization from '@/components/ThreeDVisualization';
+import BudgetProgressChart from '@/components/BudgetProgressChart';
+import SCurveChart from '@/components/SCurveChart';
+import GanttChart from '@/components/GanttChart';
 
 const Index = () => {
   return (
